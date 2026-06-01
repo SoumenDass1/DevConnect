@@ -1,0 +1,59 @@
+.portfolio-container {
+  min-height: calc(100vh - 80px);
+  padding: var(--spacing-xxl) 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.portfolio-header {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.portfolio-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio-name {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.portfolio-bio {
+  font-size: 1.125rem;
+  color: inherit;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.mt-xxl { margin-top: var(--spacing-xxl); }
+
+.tech-badge-large {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-sm {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.75rem;
+}

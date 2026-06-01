@@ -1,0 +1,28 @@
+/* Classic Cream Theme Variables */
+:root {
+  /* Core Colors */
+  --bg-color: #fdfbf7; /* Soft Ivory/Cream */
+  --surface-color: #ffffff; /* White cards */
+  --surface-color-hover: #fcf8f0; /* Slightly deeper cream */
+  
+  --primary-color: #8c7041; /* Warm Gold / Bronze */
+  --primary-hover: #b08d57; /* Lighter warm gold */
+  --secondary-color: #2b3a42; /* Deep Slate/Charcoal for contrast */
+  --danger-color: #b7410e; /* Rust/Terracotta red */
+  
+  /* Text */
+  --text-primary: #3b3a36; /* Dark Charcoal / Brownish grey */
+  --text-secondary: #5a5750; /* Softer brownish grey */
+  --text-muted: #8c8983; /* Muted stone */
+  
+  /* Borders & Shadows */
+  --border-color: #e8e4d9; /* Warm light grey border */
+  --input-bg: #ffffff;
+  --input-border: #d4cfc1;
+}
+
+/* Apply Variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}

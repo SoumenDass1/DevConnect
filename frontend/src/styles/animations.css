@@ -1,0 +1,66 @@
+/* Animations & Glow Effects */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up-delay-1 {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-slide-up-delay-2 {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  opacity: 0;
+}
+
+/* Glowing Hover Effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  /* Warm golden glow for cards */
+  box-shadow: 0 10px 25px -5px rgba(140, 112, 65, 0.3), 0 8px 10px -6px rgba(140, 112, 65, 0.1);
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  /* Glowing light on buttons */
+  box-shadow: 0 0 15px rgba(140, 112, 65, 0.6);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 15px rgba(43, 58, 66, 0.2);
+}
+
+.glass-panel {
+  background: rgba(253, 251, 247, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(140, 112, 65, 0.15);
+}
