@@ -20,6 +20,14 @@ const userSchema = mongoose.Schema(
       type: String,
       default: 'Developer',
     },
+    headline: {
+      type: String,
+      default: '',
+    },
+    profilePicture: {
+      type: String,
+      default: '',
+    },
     bio: {
       type: String,
       default: '',
@@ -30,7 +38,7 @@ const userSchema = mongoose.Schema(
     },
     portfolioTheme: {
       type: String,
-      default: 'dark',
+      default: 'light',
     },
     skills: {
       type: [String],
@@ -41,6 +49,35 @@ const userSchema = mongoose.Schema(
       linkedin: { type: String, default: '' },
       twitter: { type: String, default: '' },
     },
+    experience: [
+      {
+        company: { type: String, required: true },
+        position: { type: String, required: true },
+        startDate: { type: Date },
+        endDate: { type: Date },
+        description: { type: String, default: '' }
+      }
+    ],
+    education: [
+      {
+        school: { type: String, required: true },
+        degree: { type: String },
+        field: { type: String },
+        graduationDate: { type: Date }
+      }
+    ],
+    connections: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+      }
+    ],
+    followers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+      }
+    ]
   },
   {
     timestamps: true,

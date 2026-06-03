@@ -9,7 +9,11 @@ import Dashboard from './pages/Dashboard';
 import Settings from './pages/Settings';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
-// import Dashboard from './pages/Dashboard';
+import Feed from './pages/Feed';
+import Connections from './pages/Connections';
+import Messages from './pages/Messages';
+import Notifications from './pages/Notifications';
+import PostDetail from './pages/PostDetail';
 
 function App() {
   return (
@@ -19,6 +23,11 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/feed" element={<Feed />} />
+            <Route path="/connections" element={<Connections />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/posts/:id" element={<PostDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />

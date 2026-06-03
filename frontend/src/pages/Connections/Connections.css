@@ -1,0 +1,35 @@
+.connections-container {
+  padding: var(--spacing-xxl) var(--spacing-md);
+}
+
+.connections-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.connection-item {
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s;
+}
+
+.connection-item:hover {
+  background-color: var(--surface-color-hover);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.connection-item:last-child {
+  border-bottom: none;
+}
+
+.m-0 { margin: 0; }
+.p-sm { padding: var(--spacing-sm); }
+.p-lg { padding: var(--spacing-lg); }
+.btn-sm { padding: 4px 10px; font-size: 0.8rem; }
+
+@media (max-width: 768px) {
+  .connections-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
 
+const path = require('path');
+
 // Load env vars
 dotenv.config();
 
@@ -15,15 +17,26 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Serve static uploads folder
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 // Route files
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const projectRoutes = require('./routes/projectRoutes');
+const postRoutes = require('./routes/postRoutes');
+const connectionRoutes = require('./routes/connectionRoutes');
+const messageRoutes = require('./routes/messageRoutes');
+const notificationRoutes = require('./routes/notificationRoutes');
 
 // Mount routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/projects', projectRoutes);
+app.use('/api/posts', postRoutes);
+app.use('/api/connections', connectionRoutes);
+app.use('/api/messages', messageRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 // Error Handling Middleware
 app.use((req, res, next) => {

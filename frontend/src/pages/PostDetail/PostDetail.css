@@ -1,0 +1,78 @@
+.post-detail-container {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.post-detail-card {
+  padding: var(--spacing-lg);
+}
+
+.post-avatar-img-lg {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+.post-author-link {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.post-author-link:hover .post-author {
+  color: var(--primary-color);
+}
+
+.post-content-full {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  font-family: var(--font-family-sans);
+}
+
+.post-detail-image-wrap {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1.5px solid var(--border-color);
+  background-color: var(--surface-color);
+}
+
+.post-detail-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+}
+
+.comment-form {
+  align-items: center;
+}
+
+.comment-avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.comment-author-name {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.comment-author-name:hover {
+  color: var(--primary-color);
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
