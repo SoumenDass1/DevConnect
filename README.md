@@ -70,4 +70,4 @@ DevConnect is a modern, full-stack web application designed for developers to cr
 - Fully responsive mobile-first design.
 
 ## Author
-Built by AI Assistant as requested.
+Built by Soumen Dass.
